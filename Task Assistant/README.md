@@ -32,6 +32,7 @@ A smart CLI-based task management assistant that lets you create and manage task
 ### 1. Clone the Repo
 
 git clone https://github.com/Vanshika-chauhan983/Task-Assistant.git
+
 cd task-assistant
 
 ### 2. Install Requirements
@@ -41,11 +42,13 @@ pip install -r requirements.txt
 ### 3. Set Up Environment
 
 Create a .env file in the root folder with your Gemini API key.
+
 GEMINI_API_KEY=your_gemini_key_here
 
 ### 4. Initialize the Database
 
 python setup.py
+
 This creates tasks.db and prepares the schema.
 
 ## Usage Examples
@@ -53,6 +56,7 @@ This creates tasks.db and prepares the schema.
 ### 1. Add a Task
 
 python main.py
+
 Prompt:
 
 Add a task to buy milk by 17-07-2025, high priority, category personal
@@ -60,6 +64,7 @@ Add a task to buy milk by 17-07-2025, high priority, category personal
 Result:
 
 Gemini Raw Output-
+
 {"title": "buy milk", "priority": "high", "due_date": "17-07-2025", "category": "personal"}
 
 Task added to the database.
@@ -67,6 +72,7 @@ Task added to the database.
 ### 2. List tasks 
 
 python main.py
+
 Prompt:
 
 List tasks
@@ -121,6 +127,7 @@ Status: pending
 ### 3. Filter Tasks
 
 python main.py
+
 Prompt:
 
 Filter tasks
@@ -148,6 +155,7 @@ Status: pending
 ### 4. Update Task
 
 python main.py
+
 Prompt:
 
 Enter the task ID to update: 5
@@ -164,9 +172,11 @@ Task updated successfully.
 ### 5. Delete Task
 
 python main.py
+
 Prompt:
 
 Delete task
+
 Enter the task ID to delete:5
 
 Result:
@@ -176,6 +186,7 @@ Task 5 deleted successfully.
 ### 6. Export Tasks as CSV
 
 python main.py
+
 Prompt:
 
 Export as CSV
@@ -185,6 +196,7 @@ Result:
 Tasks exported to tasks_report.csv.
 
 ### 7. Daily Reminder
+
 Schedule a daily CLI reminder at 9AM.
 
 python reminder.py
@@ -192,10 +204,15 @@ python reminder.py
 Result:
 
 Daily Task Summary (2025-06-29)
+
 Complete assignment (high priority) by 01-07-2025
+
 Buy groceries (None priority) by Monday
+
 Complete Data Science project (high priority) by Sunday
+
 Find Internship (25-07-2025 priority) by high
+
 Buy milk (high priority) by 17-07-2025
 
 ## Project Structure
