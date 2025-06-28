@@ -228,21 +228,21 @@ task-assistant/
 
 ├── core/
 
-│   └── task_manager.py       # DB operations
+│   └── task_manager.py      
 
-├── main.py                   # CLI logic
+├── main.py                   
 
-├── gemini_parser.py          # Gemini NLP parser
+├── gemini_parser.py          
 
-├── reminder.py               # Scheduled daily reminders
+├── reminder.py               
 
-├── setup.py                  # Initializes the DB
+├── setup.py                 
 
-├── tasks.db                  # SQLite database
+├── tasks.db                  
 
-├── .env                      # API key (not shared)
+├── .env                      
 
-├── requirements.txt          # Dependencies
+├── requirements.txt          
 
 └── README.md       
 
