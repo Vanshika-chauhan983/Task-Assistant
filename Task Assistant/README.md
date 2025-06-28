@@ -57,10 +57,10 @@ This creates tasks.db and prepares the schema.
 
 python main.py
 
-Prompt:
+**Prompt:**
 Add a task to buy milk by 17-07-2025, high priority, category personal
 
-Result:
+**Result:**
 
 Gemini Raw Output-
 
@@ -72,10 +72,10 @@ Task added to the database.
 
 python main.py
 
-Prompt:
+**Prompt:**
 List tasks
 
-Result:
+**Result:**
 
 Task List:
 
@@ -106,103 +106,101 @@ Status: pending
 
 ------------------------------
 ID: 3
+
 Title:     Buy gift
+
 Priority:  Tuesday
+
 Due Date:  high
+
 Category:  personal
+
 Status: Completed
-------------------------------
-ID: 4
-Title:     Complete Data Science project
-Priority:  Sunday
-Due Date:  high
-Category:  college
-Status: pending
-------------------------------
-ID: 5
-Title:     Add a task to find internship
-Priority:  25-07-2025
-Due Date:  high
-Category:  personal
-Status: pending
-------------------------------
-ID: 6
-Title:     buy milk
-Priority:  17-07-2025
-Due Date:  high
-Category:  personal
-Status: pending
+
 ------------------------------
 
 ### 3. Filter Tasks
 
 python main.py
 
-Prompt:
-
+**Prompt:**
 Filter tasks
+
 Status (leave blank for any type):
+
 Category (leave blank for any type): college
+
 Priority (leave blank for any):
 
-Result:
+**Result:**
 
 ID: 1
+
 Title: Complete assignment
+
 Priority: 01-07-2025
+
 Due Date: high
+
 Category: college
+
 Status: pending
+
 ------------------------------
 ID: 4
+
 Title: Complete Data Science project
+
 Priority: Sunday
+
 Due Date: high
+
 Category: college
+
 Status: pending
+
 ------------------------------
 
 ### 4. Update Task
 
 python main.py
 
-Prompt:
-
+**Prompt:**
 Enter the task ID to update: 5
+
 New title (leave blank to keep current title): Find Internship
+
 New due date (leave blank to keep current due date):
+
 New priority (leave blank to keep current priority):
+
 New category (leave blank to keep current category):
-Enter the status of task:
 
-Result:
+Enter the status of task: completed
 
+**Result:**
 Task updated successfully.
 
 ### 5. Delete Task
 
 python main.py
 
-Prompt:
-
+**Prompt:**
 Delete task
 
 Enter the task ID to delete:5
 
-Result:
-
+**Result:**
 Task 5 deleted successfully.
 
 ### 6. Export Tasks as CSV
 
 python main.py
 
-Prompt:
-
+**Prompt:**
 Export as CSV
 
-Result:
-
+**Result:**
 Tasks exported to tasks_report.csv.
 
 ### 7. Daily Reminder
@@ -211,8 +209,7 @@ Schedule a daily CLI reminder at 9AM.
 
 python reminder.py
 
-Result:
-
+**Result:**
 Daily Task Summary (2025-06-29)
 
 Complete assignment (high priority) by 01-07-2025
@@ -228,22 +225,35 @@ Buy milk (high priority) by 17-07-2025
 ## Project Structure
 
 task-assistant/
+
 ├── core/
+
 │   └── task_manager.py       # DB operations
+
 ├── main.py                   # CLI logic
+
 ├── gemini_parser.py          # Gemini NLP parser
+
 ├── reminder.py               # Scheduled daily reminders
+
 ├── setup.py                  # Initializes the DB
+
 ├── tasks.db                  # SQLite database
+
 ├── .env                      # API key (not shared)
+
 ├── requirements.txt          # Dependencies
+
 └── README.md       
 
 ## Requirements
 
 Python 3.8+
+
 google-generativeai
+
 python-dotenv
+
 schedule
 
 Install with:
@@ -253,4 +263,5 @@ pip install -r requirements.txt
 ## Author
 
 **Vanshika Chauhan**
+
 Built as a part of an internship Project submission - June 2025
