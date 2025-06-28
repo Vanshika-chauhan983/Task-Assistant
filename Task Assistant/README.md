@@ -31,7 +31,7 @@ A smart CLI-based task management assistant that lets you create and manage task
 
 ### 1. Clone the Repo
 
-git clone https://github.com/Vanshika-chauhan983/task-assistant.git
+git clone https://github.com/Vanshika-chauhan983/Task-Assistant.git
 cd task-assistant
 
 ### 2. Install Requirements
