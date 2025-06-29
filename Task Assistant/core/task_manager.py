@@ -81,7 +81,7 @@ def list_tasks(status=None, category=None, priority=None):
             print(f"Status: {task[5]}")
             print("-"*30)
 
-def update_task(task_id, new_title=None, new_priority=None, new_due_date=None, new_category=None, new_status=None):
+def update_task(task_id, new_title=None, new_due_date=None, new_priority=None, new_category=None, new_status=None):
     conn = sqlite3.connect("tasks.db")
     cursor = conn.cursor()
 
