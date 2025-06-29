@@ -61,12 +61,13 @@ This creates tasks.db and prepares the schema.
 > Add a task to buy milk by 17-07-2025, high priority, category personal
 
 **Result:**
-
+```
 Gemini Raw Output-
 
 {"title": "buy milk", "priority": "high", "due_date": "17-07-2025", "category": "personal"}
 
 Task added to the database.
+```
 
 ### 2. List tasks 
 
