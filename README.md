@@ -31,13 +31,13 @@ A smart CLI-based task management assistant that lets you create and manage task
 
 ### 1. Clone the Repo
 
-git clone https://github.com/Vanshika-chauhan983/Task-Assistant.git
+> git clone https://github.com/Vanshika-chauhan983/Task-Assistant.git
 
-cd task-assistant
+> cd task-assistant
 
 ### 2. Install Requirements
 
-pip install -r requirements.txt
+> pip install -r requirements.txt
 
 ### 3. Set Up Environment
 
@@ -47,7 +47,7 @@ GEMINI_API_KEY=your_gemini_key_here
 
 ### 4. Initialize the Database
 
-python setup.py
+> python setup.py
 
 This creates tasks.db and prepares the schema.
 
@@ -55,10 +55,10 @@ This creates tasks.db and prepares the schema.
 
 ### 1. Add a Task
 
-python main.py
+> python main.py
 
 **Prompt:**
-Add a task to buy milk by 17-07-2025, high priority, category personal
+> Add a task to buy milk by 17-07-2025, high priority, category personal
 
 **Result:**
 
@@ -70,7 +70,7 @@ Task added to the database.
 
 ### 2. List tasks 
 
-python main.py
+> python main.py
 
 **Prompt:**
 List tasks
@@ -121,10 +121,10 @@ Status: Completed
 
 ### 3. Filter Tasks
 
-python main.py
+> python main.py
 
 **Prompt:**
-Filter tasks
+> Filter tasks
 
 Status (leave blank for any type):
 
@@ -163,10 +163,10 @@ Status: pending
 
 ### 4. Update Task
 
-python main.py
+> python main.py
 
 **Prompt:**
-Enter the task ID to update: 5
+> Enter the task ID to update: 5
 
 New title (leave blank to keep current title): Find Internship
 
@@ -183,10 +183,10 @@ Task updated successfully.
 
 ### 5. Delete Task
 
-python main.py
+> python main.py
 
 **Prompt:**
-Delete task
+> Delete task
 
 Enter the task ID to delete:5
 
@@ -195,10 +195,10 @@ Task 5 deleted successfully.
 
 ### 6. Export Tasks as CSV
 
-python main.py
+> python main.py
 
 **Prompt:**
-Export as CSV
+> Export as CSV
 
 **Result:**
 Tasks exported to tasks_report.csv.
@@ -207,7 +207,7 @@ Tasks exported to tasks_report.csv.
 
 Schedule a daily CLI reminder at 9AM.
 
-python reminder.py
+> python reminder.py
 
 **Result:**
 Daily Task Summary (2025-06-29)
