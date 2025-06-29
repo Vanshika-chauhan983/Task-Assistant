@@ -61,6 +61,7 @@ This creates tasks.db and prepares the schema.
 > Add a task to buy milk by 17-07-2025, high priority, category personal
 
 **Result:**
+
 ```
 Gemini Raw Output-
 
@@ -74,10 +75,11 @@ Task added to the database.
 > python main.py
 
 **Prompt:**
-List tasks
+> List tasks
 
 **Result:**
 
+```
 Task List:
 
 ID: 1
@@ -119,6 +121,7 @@ Category:  personal
 Status: Completed
 
 ------------------------------
+```
 
 ### 3. Filter Tasks
 
@@ -127,14 +130,15 @@ Status: Completed
 **Prompt:**
 > Filter tasks
 
-Status (leave blank for any type):
+> Status (leave blank for any type):
 
-Category (leave blank for any type): college
+> Category (leave blank for any type): college
 
-Priority (leave blank for any):
+> Priority (leave blank for any):
 
 **Result:**
 
+```
 ID: 1
 
 Title: Complete assignment
@@ -161,6 +165,7 @@ Category: college
 Status: pending
 
 ------------------------------
+```
 
 ### 4. Update Task
 
@@ -169,18 +174,21 @@ Status: pending
 **Prompt:**
 > Enter the task ID to update: 5
 
-New title (leave blank to keep current title): Find Internship
+> New title (leave blank to keep current title): Find Internship
 
-New due date (leave blank to keep current due date):
+> New due date (leave blank to keep current due date):
 
-New priority (leave blank to keep current priority):
+> New priority (leave blank to keep current priority):
 
-New category (leave blank to keep current category):
+> New category (leave blank to keep current category):
 
-Enter the status of task: completed
+> Enter the status of task: completed
 
 **Result:**
+
+```
 Task updated successfully.
+```
 
 ### 5. Delete Task
 
@@ -189,10 +197,13 @@ Task updated successfully.
 **Prompt:**
 > Delete task
 
-Enter the task ID to delete:5
+> Enter the task ID to delete:5
 
 **Result:**
+
+```
 Task 5 deleted successfully.
+```
 
 ### 6. Export Tasks as CSV
 
@@ -202,7 +213,10 @@ Task 5 deleted successfully.
 > Export as CSV
 
 **Result:**
+
+```
 Tasks exported to tasks_report.csv.
+```
 
 ### 7. Daily Reminder
 
@@ -211,6 +225,8 @@ Schedule a daily CLI reminder at 9AM.
 > python reminder.py
 
 **Result:**
+
+```
 Daily Task Summary (2025-06-29)
 
 Complete assignment (high priority) by 01-07-2025
@@ -222,6 +238,7 @@ Complete Data Science project (high priority) by Sunday
 Find Internship (25-07-2025 priority) by high
 
 Buy milk (high priority) by 17-07-2025
+```
 
 ## Project Structure
 
